@@ -20,6 +20,8 @@ header{
 header .container{
     display: flex;
     align-items: center;
+    position: relative; /* Necessário para o posicionamento absoluto do título */
+    min-height: 10vh;
 }
 
 .logo img{
@@ -28,12 +30,12 @@ header .container{
 }
 
 header .logo-titulo{
-    margin-left: auto;
-    margin-right: auto ;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 header button{
-    margin-left: auto; 
     padding: 10px 20px;
     background-color: #057eb6;
     color: rgb(255, 255, 255);
@@ -41,6 +43,19 @@ header button{
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+}
+
+/* Esconde o menu hambúrguer em telas grandes */
+.menu-hamburger {
+    display: none;
+}
+
+/* Container para o botão e a navegação */
+.nav-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Empurra o grupo para a direita */
+    gap: 20px;
 }
 
 nav ul{
