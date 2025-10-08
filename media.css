@@ -1,0 +1,184 @@
+@media (max-width: 768px) {
+
+    /* Header */
+    header .container {
+        flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+
+    header .logo-titulo {
+        order: 0; /* Ordem padrão */
+        margin: 0;
+        flex-grow: 1; /* Ocupa o espaço disponível */
+        text-align: center;
+    }
+
+    header .logo {
+        order: -1; /* Move o logo para a esquerda */
+    }
+
+    header .logo img {
+        width: 60px; /* Reduz o tamanho do logo no celular */
+        height: auto;
+    }
+
+    /* --- Estilos do Menu Hambúrguer --- */
+    .menu-hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        order: 1; /* Move o ícone para a direita */
+    }
+
+    .menu-hamburger .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    /* Esconde a navegação e o botão por padrão */
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    /* Mostra o menu quando a classe 'active' é adicionada via JS */
+    .nav-container.active {
+        display: flex;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 10px;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+    }
+
+    header button {
+        margin-left: 0;
+        width: 80%;
+        max-width: 250px;
+    }
+
+    /* Seção Início - Correção da sobreposição */
+    .inicio {
+        position: relative; /* Garante o contexto para o posicionamento absoluto */
+    }
+
+    .inicio .texto-inicio {
+        font-size: 1.5rem;
+        width: 90%;
+        top: 50%; /* Centraliza verticalmente */
+    }
+
+    .inicio .texto-inicio h1 {
+        font-size: 2rem;
+    }
+
+    /* Seção Sobre */
+    .sobre {
+        flex-direction: column;
+        padding: 5vh;
+        gap: 30px;
+    }
+
+    .sobre .imagem-sobre {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .sobre .imagem-sobre img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .img2, .img3 {
+        position: static; /* Reseta o posicionamento complexo */
+    }
+
+    .sobre .texto-sobre {
+        text-align: left;
+    }
+
+    /* Seção Serviços */
+    .servicos {
+        padding: 10vh 5vw;
+    }
+
+    .texto-servicos {
+        width: 90%;
+        padding: 0;
+        margin-bottom: 5vh;
+        font-size: 1.2rem;
+    }
+
+    .imagens-servicos {
+        grid-template-columns: 1fr; /* Uma coluna */
+        gap: 5vh;
+    }
+
+    .imagem-servicos {
+        max-width: 100%;
+    }
+
+    /* Seção Equipe */
+    .equipe {
+        flex-direction: column;
+        padding: 5vh 5vw;
+    }
+
+    .equipe .titulo {
+        writing-mode: horizontal-tb; /* Título na horizontal */
+        transform: none;
+        margin: 0 0 30px 0;
+        font-size: 2rem;
+    }
+
+    .equipe .time {
+        flex-direction: column;
+    }
+
+    .equipe .time .membro,
+    .equipe .time .membro2 {
+        width: 70vw; /* Ajusta a largura dos cards */
+    }
+
+    /* Seção Local */
+    .local {
+        padding: 60px 5vw;
+    }
+
+    .localizacao {
+        width: 90vw; /* Ocupa mais a largura da tela */
+        height: 40vh;
+    }
+
+    .localizacao p {
+        top: auto;
+        bottom: 0;
+        padding: 1.5vh;
+    }
+
+    /* Rodapé */
+    .rodape {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rodape .icons {
+        margin: 0;
+    }
+}
