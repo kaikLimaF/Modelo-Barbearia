@@ -3,12 +3,12 @@
 body{
    margin: 0 auto;
    background-color: rgb(13, 75, 97);
-   font-family: 'Roboto', sans-serif; /* Fonte padrão para o corpo */
+   font-family: 'Roboto', sans-serif; 
 }
 
 h1, h2, h3, p, button {
-    font-family: 'Oswald', sans-serif; /* Fonte para títulos, parágrafos e botões */
-    text-transform: uppercase; /* Deixa os textos em maiúsculo */
+    font-family: 'Oswald', sans-serif; 
+    text-transform: uppercase; 
 }
 
 
@@ -20,23 +20,20 @@ header{
 header .container{
     display: flex;
     align-items: center;
-    position: relative; /* Cria um contexto de posicionamento para o título */
-    min-height: 10vh; /* Garante que o header tenha altura mínima igual ao logo */
 }
 
 .logo img{
     width: 10vh;
+    
 }
 
 header .logo-titulo{
-    position: absolute; /* Remove o título do fluxo normal */
-    left: 50%; /* Posiciona a borda esquerda do elemento no meio */
-    transform: translateX(-50%); /* Puxa o elemento 50% de sua própria largura para a esquerda, centralizando-o */
-    /* Remove margens automáticas que não são mais necessárias */
+    margin-left: auto;
+    margin-right: auto ;
 }
 
 header button{
-    /* margin-left: auto; */ /* Removido para controlar com flexbox */
+    margin-left: auto; 
     padding: 10px 20px;
     background-color: #057eb6;
     color: rgb(255, 255, 255);
@@ -46,19 +43,6 @@ header button{
     font-weight: bold;
 }
 
-/* Esconde o menu hambúrguer em telas grandes */
-.menu-hamburger {
-    display: none;
-}
-
-/* Organiza o container da navegação e botão */
-.nav-container {
-    display: flex;
-    align-items: center;
-    margin-left: auto; /* Empurra o grupo para a direita */
-    gap: 20px; /* Espaço entre o botão e o menu */
-}
-
 nav ul{
     list-style: none;
     display: flex;
@@ -66,17 +50,17 @@ nav ul{
 }
 
 nav ul li {
-    margin-left: 20px; /* Espaço entre os itens do menu */
+    margin-left: 20px; 
 }
 
 nav ul li a {
-    color: white; /* Cor dos links */
-    text-decoration: none; /* Remove sublinhado */
+    color: white; 
+    text-decoration: none; 
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #ddd; /* Efeito ao passar o mouse */
+    color: #ddd; 
 }
 
 /*////////////////////////////////////////////////////////////////////////////*/
@@ -93,7 +77,7 @@ nav ul li a:hover {
     height: auto;
     max-height: 100vh;
     object-fit: cover;
-     filter: brightness(30%); /* deixar mais escuro a imagem*/
+     filter: brightness(30%); 
 }
 
 .inicio .texto-inicio{
@@ -147,14 +131,14 @@ nav ul li a:hover {
 
 .img2 {
   position: relative;
-  top: 25vh;  /* desloca pra baixo */
-  right: 10vh; /* desloca pra direita */
+  top: 25vh;  
+  right: 10vh; 
   z-index: 2;
 }
 
 .img3 {
   position: relative;
-  top: 1vh;   /* desloca pra baixo */
+  top: 1vh;   
   z-index: 1;
 }   
 
@@ -311,7 +295,7 @@ nav ul li a:hover {
 
     /*////////////////////////////////////////////////////////////////////////////*/
 /* Seção Local */
-/* Seção Local */
+
 .local {
     background: #fff;
     padding: 60px 5vw;
@@ -333,7 +317,7 @@ nav ul li a:hover {
     overflow: hidden;
     width:40vh;
     height: 50vh;
-    margin: 0 auto; /* centraliza */
+    margin: 0 auto; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
@@ -343,7 +327,7 @@ nav ul li a:hover {
     height: 100%;
     object-fit: cover;
     display: block;
-    filter: brightness(60%); /* deixar mais escuro a imagem*/
+    filter: brightness(60%); 
 }
 
 /* Texto por cima da imagem */

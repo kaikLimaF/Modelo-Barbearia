@@ -2,24 +2,24 @@
 
     /* Header */
     header .container {
-        flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 15px 20px;
     }
 
     header .logo-titulo {
-        order: 0; /* Ordem padrão */
+        order: 0; 
         margin: 0;
-        flex-grow: 1; /* Ocupa o espaço disponível */
+        flex-grow: 1;
         text-align: center;
     }
 
     header .logo {
-        order: -1; /* Move o logo para a esquerda */
+        order: -1; 
     }
 
     header .logo img {
-        width: 60px; /* Reduz o tamanho do logo no celular */
+        width: 60px; 
         height: auto;
     }
 
@@ -31,7 +31,7 @@
         width: 30px;
         height: 25px;
         cursor: pointer;
-        order: 1; /* Move o ícone para a direita */
+        order: 1; 
     }
 
     .menu-hamburger .bar {
@@ -75,13 +75,13 @@
 
     /* Seção Início - Correção da sobreposição */
     .inicio {
-        position: relative; /* Garante o contexto para o posicionamento absoluto */
+        position: relative; 
     }
 
     .inicio .texto-inicio {
         font-size: 1.5rem;
         width: 90%;
-        top: 50%; /* Centraliza verticalmente */
+        top: 50%; 
     }
 
     .inicio .texto-inicio h1 {
@@ -106,7 +106,7 @@
     }
 
     .img2, .img3 {
-        position: static; /* Reseta o posicionamento complexo */
+        position: static; 
     }
 
     .sobre .texto-sobre {
@@ -126,7 +126,7 @@
     }
 
     .imagens-servicos {
-        grid-template-columns: 1fr; /* Uma coluna */
+        grid-template-columns: 1fr; 
         gap: 5vh;
     }
 
@@ -141,7 +141,7 @@
     }
 
     .equipe .titulo {
-        writing-mode: horizontal-tb; /* Título na horizontal */
+        writing-mode: horizontal-tb; 
         transform: none;
         margin: 0 0 30px 0;
         font-size: 2rem;
@@ -153,7 +153,7 @@
 
     .equipe .time .membro,
     .equipe .time .membro2 {
-        width: 70vw; /* Ajusta a largura dos cards */
+        width: 70vw; 
     }
 
     /* Seção Local */
@@ -162,7 +162,7 @@
     }
 
     .localizacao {
-        width: 90vw; /* Ocupa mais a largura da tela */
+        width: 90vw; 
         height: 40vh;
     }
 
