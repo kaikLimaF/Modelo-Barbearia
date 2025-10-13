@@ -1,41 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap');
 
-body{
-   margin: 0 auto;
-   background-color: rgb(13, 75, 97);
-   font-family: 'Roboto', sans-serif; 
+body {
+    margin: 0 auto;
+    background-color: rgb(13, 75, 97);
+    background-image: url(img/pexels-elina-araja-1743227-3377405.jpg);
+    /* Adicione aqui o link para uma imagem de textura sutil */
+    background-blend-mode: multiply;
+    /* Mistura a cor e a textura */
+    font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, p, button {
-    font-family: 'Oswald', sans-serif; 
-    text-transform: uppercase; 
+h1,
+h2,
+h3,
+p,
+button {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
 
-header{
+header {
     background-color: rgb(5, 16, 20);
     color: white;
     padding: 0px 20px;
 }
-header .container{
+
+header .container {
     display: flex;
     align-items: center;
-    position: relative; /* Necessário para o posicionamento absoluto do título */
+    position: relative;
+    /* Necessário para o posicionamento absoluto do título */
     min-height: 10vh;
 }
 
-.logo img{
+.logo img {
     width: 10vh;
-    
+
 }
 
-header .logo-titulo{
+header .logo-titulo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-header button{
+header button {
     padding: 10px 20px;
     background-color: #057eb6;
     color: rgb(255, 255, 255);
@@ -54,57 +64,59 @@ header button{
 .nav-container {
     display: flex;
     align-items: center;
-    margin-left: auto; /* Empurra o grupo para a direita */
+    margin-left: auto;
+    /* Empurra o grupo para a direita */
     gap: 20px;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
 nav ul li {
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: white; 
-    text-decoration: none; 
+    color: white;
+    text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #ddd; 
+    color: #ddd;
 }
 
 /*////////////////////////////////////////////////////////////////////////////*/
 
-.inicio{
+.inicio {
     text-align: center;
     color: rgb(255, 255, 255);
+
 }
 
-.inicio img{
+.inicio img {
     position: relative;
     display: block;
     width: 100%;
     height: auto;
     max-height: 100vh;
     object-fit: cover;
-     filter: brightness(30%); 
+    filter: brightness(30%);
 }
 
-.inicio .texto-inicio{
+.inicio .texto-inicio {
     position: absolute;
-    top: 60%;   
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.5rem;
-}   
+}
 
-.inicio button{
-    
+.inicio button {
+
     padding: 10px 20px;
     color: rgb(0, 0, 0);
     border: none;
@@ -115,76 +127,86 @@ nav ul li a:hover {
 
 /*////////////////////////////////////////////////////////////////////////////*/
 
-.sobre{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15vh;
-  background: rgb(13, 75, 97);
-  color: #fff;
-}
-.sobre .imagem-sobre{
-  display: grid;
-  grid-template-columns: repeat(2, 40vh);
-  gap: 5vh;
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15vh;
+    background: rgb(13, 75, 97);
+    background-image: url(img/pexels-elina-araja-1743227-3377405.jpg);
+    /* Adicione aqui o link para uma imagem de textura sutil */
+    background-blend-mode: multiply;
+    /* Mistura a cor e a textura */
+    color: #fff;
 }
 
-.sobre .imagem-sobre img{
-  width: 100%;
-  max-width: 30vh;
-  height: 30vh;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);  
-  
+.sobre .imagem-sobre {
+    display: grid;
+    grid-template-columns: repeat(2, 40vh);
+    gap: 5vh;
+}
+
+.sobre .imagem-sobre img {
+    border: 2px solid #ad7725;
+    width: 100%;
+    max-width: 30vh;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 .img1 {
-  position: relative;
-  z-index: 3;
+    position: relative;
+    z-index: 3;
 }
 
 .img2 {
-  position: relative;
-  top: 25vh;  
-  right: 10vh; 
-  z-index: 2;
+    position: relative;
+    top: 25vh;
+    right: 10vh;
+    z-index: 2;
 }
 
 .img3 {
-  position: relative;
-  top: 1vh;   
-  z-index: 1;
-}   
+    position: relative;
+    top: 1vh;
+    z-index: 1;
+}
 
-.sobre .texto-sobre{
+.sobre .texto-sobre {
     max-width: 600px;
     text-align: justify;
 }
 
 /*////////////////////////////////////////////////////////////////////////////*/
 
-.servicos{
+.servicos {
     padding: 15vh 11vh;
     background-color: rgb(255, 255, 255);
+    background-image: url(img/pexels-elina-araja-1743227-3377405.jpg);
+    /* Adicione aqui o link para uma imagem de textura sutil */
+    background-blend-mode: multiply;
+    /* Mistura a cor e a textura */
     color: rgb(0, 0, 0);
     text-align: center;
 }
 
 
 
-.imagens-servicos img{
-    margin: auto    ;
+.imagens-servicos img {
+    margin: auto;
     display: block;
     width: 100%;
     max-width: 40vh;
     height: 40vh;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.texto-servicos{
+.texto-servicos {
     margin-top: -10vh;
     padding: 10vh;
     font-size: 1.5rem;
@@ -192,55 +214,57 @@ nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
 }
-.texto-servicos h1{
+
+.texto-servicos h1 {
     color: rgb(13, 75, 97);
 }
 
- .imagens-servicos {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1vw;
-      justify-items: center;
-      align-items: start;
-    }
+.imagens-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    justify-items: center;
+    align-items: start;
+}
 
-    .imagem-servicos {
-      position: relative;
-      width: 100%;
-      max-width: 40vh;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.671);
-      border-radius: 8px;
-      overflow: hidden;
-    }
+.imagem-servicos {
+    position: relative;
+    width: 100%;
+    max-width: 40vh;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.671);
+    border-radius: 8px;
+    overflow: hidden;
+}
 
-    .imagem-servicos img {
-      width: 100%;
-      height: 40vh;
-      object-fit: cover;
-      display: block;
-    }
+.imagem-servicos img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    display: block;
+}
 
-    .descricao {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1vh;
-      background: rgba(255, 248, 248, 0.9);
-      font-weight: bold;
-      color: #000;
-      font-size: 1rem;
-    }
+.descricao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+    background: rgba(255, 248, 248, 0.9);
 
-    .preco {
-      background: #0e4e78;
-      color: #fff;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-weight: 500;
-      font-size: 0.9rem;
-    }
+    font-weight: bold;
+    color: #000;
+    font-size: 1rem;
+}
 
-    /*////////////////////////////////////////////////////////////////////////////*/
+.preco {
+    background: #0e4e78;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
 
 
 /* Seção equipe */
@@ -249,7 +273,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     padding: 5vh 5vw;
-   
+
 }
 
 /* Texto lateral "Nossa Equipe" */
@@ -288,7 +312,8 @@ nav ul li a:hover {
 .equipe h3 {
     margin: 10px 0;
     font-size: 1rem;
-    color: #f0a533; /* cor do nome na imagem */
+    color: #f0a533;
+    /* cor do nome na imagem */
     font-weight: bold;
 }
 
@@ -308,11 +333,15 @@ nav ul li a:hover {
     color: #f0a533;
 }
 
-    /*////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////*/
 /* Seção Local */
 
 .local {
     background: #fff;
+    background-image: url(img/pexels-elina-araja-1743227-3377405.jpg);
+    /* Adicione aqui o link para uma imagem de textura sutil */
+    background-blend-mode: multiply;
+    /* Mistura a cor e a textura */
     padding: 60px 5vw;
     text-align: center;
 }
@@ -320,7 +349,8 @@ nav ul li a:hover {
 .local h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #14465b; /* azul do tema */
+    color: #14465b;
+    /* azul do tema */
     margin-bottom: 40px;
     text-transform: uppercase;
 }
@@ -330,10 +360,10 @@ nav ul li a:hover {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
-    width:40vh;
+    width: 40vh;
     height: 50vh;
-    margin: 0 auto; 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 /* Imagem */
@@ -342,7 +372,7 @@ nav ul li a:hover {
     height: 100%;
     object-fit: cover;
     display: block;
-    filter: brightness(60%); 
+    filter: brightness(60%);
 }
 
 /* Texto por cima da imagem */
@@ -352,7 +382,7 @@ nav ul li a:hover {
     right: 0;
     margin: 0;
     top: 40vh;
-    padding: 2vh ;
+    padding: 2vh;
     color: #fff;
     background: rgba(0, 0, 0, 0.6);
     text-align: center;
@@ -364,10 +394,14 @@ nav ul li a:hover {
 }
 
 
-    /*////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////*/
 /* Rodapé */
 .rodape {
-    background: #ffffff;
+    background: rgb(13, 75, 97);
+    background-image: url(img/pexels-elina-araja-1743227-3377405.jpg);
+    /* Adicione aqui o link para uma imagem de textura sutil */
+    background-blend-mode: multiply;
+    /* Mistura a cor e a textura */
     text-align: center;
     padding: 3vh 0;
     position: relative;
@@ -380,6 +414,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
     margin: auto;
 }
+
 .rodape .icons img {
     width: 3vh;
     transition: transform 0.3s;
