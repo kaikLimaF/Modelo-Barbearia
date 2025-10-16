@@ -99,25 +99,16 @@
         gap: 30px;
     }
 
-    .sobre .imagem-sobre {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+    .sobre .texto-pc{
+        display: none;
     }
 
-    .sobre .imagem-sobre img {
-        max-width: 100%;
-        height: auto;
+    .sobre .texto-movel {
+        display: block;
+        text-align: justify; /* Centraliza o texto para consistência */
     }
-
-    .img2,
-    .img3 {
-        position: static;
-    }
-
-    .sobre .texto-sobre {
-        text-align: left;
-    }
-
+   
+    
     /* Seção Serviços */
     .servicos {
         padding: 10vh 5vw;
@@ -138,6 +129,7 @@
     .imagem-servicos {
         max-width: 100%;
     }
+    
 
     /* Seção Equipe */
     .equipe {
@@ -182,4 +174,27 @@
             /* Empilha as seções verticalmente em telas menores */
             align-items: center;
         }
+    }
+
+    @media (max-width: 768px) {
+.sobre .imagem-sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza as imagens horizontalmente */
+        width: 100%; /* Ocupa a largura disponível */
+        gap: 20px; /* Espaçamento entre as imagens */
+    }
+
+    .sobre .imagem-sobre img {
+        max-width: 80%; /* Define uma largura máxima para as imagens */
+        height: auto;
+    }
+
+    .img2,
+    .img3 {
+        position: static;
+        display: block; /* Garante que as imagens 2 e 3 sejam exibidas */
+        display: none;
+    }
+
     }

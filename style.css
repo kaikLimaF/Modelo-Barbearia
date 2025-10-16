@@ -140,6 +140,10 @@ nav ul li a:hover {
     color: #fff;
 }
 
+.sobre .texto-movel{
+    display: none;
+}
+
 .sobre .imagem-sobre {
     display: grid;
     grid-template-columns: repeat(2, 40vh);
@@ -175,7 +179,7 @@ nav ul li a:hover {
     z-index: 1;
 }
 
-.sobre .texto-sobre {
+.sobre .texto-pc {
     max-width: 600px;
     text-align: justify;
 }
