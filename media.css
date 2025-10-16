@@ -1,4 +1,4 @@
-@media (max-width: 768px), (max-width: 1224px) {
+@media (max-width: 1224px) {
 
     /* Header */
     header .container {
@@ -7,15 +7,18 @@
         padding: 15px 20px;
     }
 
+    .logo-container {
+        position: static; 
+        order: -1; 
+    }
+
     header .logo-titulo {
-        order: 0;
-        margin: 0;
-        flex-grow: 1;
-        text-align: center;
+        position: static; /* Remove o posicionamento absoluto */
+        transform: none; /* Remove a transformação */
     }
 
     header .logo {
-        order: -1;
+        margin-right: -10px; 
     }
 
     header .logo img {
@@ -31,7 +34,7 @@
         width: 30px;
         height: 25px;
         cursor: pointer;
-        order: 1;
+        order: 1; 
     }
 
     .menu-hamburger .bar {
@@ -48,6 +51,7 @@
         width: 100%;
         align-items: center;
         gap: 15px;
+        order: 2; 
         margin-top: 15px;
     }
 
@@ -173,13 +177,9 @@
         padding: 1.5vh;
     }
 
-    /* Rodapé */
-    @media (max-width: 768px) {
         .footer-container {
             flex-direction: column;
             /* Empilha as seções verticalmente em telas menores */
             align-items: center;
         }
     }
-
-}
