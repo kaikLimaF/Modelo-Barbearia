@@ -312,6 +312,17 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+.membro:hover img{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.membro2:hover img{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
 /* Nome dos membros */
 .equipe h3 {
     margin: 10px 0;
@@ -377,6 +388,13 @@ nav ul li a:hover {
     object-fit: cover;
     display: block;
     filter: brightness(60%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.localizacao:hover img {
+    transform: scale(1.55);
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Texto por cima da imagem */
