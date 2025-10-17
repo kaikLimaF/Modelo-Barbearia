@@ -348,23 +348,43 @@ nav ul li a:hover {
     color: #f0a533;
 }
 
+/*video*/
+
+.video {
+    text-align: center;;
+    padding: 60px 5vw;
+    background: #fff;
+    background-image: url(img/pexels-elina-araja-1743227-3377405.jpg);
+    background-blend-mode: multiply;/
+}
+
+.video video {
+    height: 70vh;
+    width: 50vh; 
+    aspect-ratio: 9 / 16;
+    max-width: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 /*////////////////////////////////////////////////////////////////////////////*/
 /* Seção Local */
 
 .local {
-    background: #fff;
+    background: #0e4e78;
     background-image: url(img/pexels-elina-araja-1743227-3377405.jpg);
     /* Adicione aqui o link para uma imagem de textura sutil */
     background-blend-mode: multiply;
     /* Mistura a cor e a textura */
     padding: 60px 5vw;
     text-align: center;
+
 }
 
 .local h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #14465b;
+    color: #bcbcbd;
     /* azul do tema */
     margin-bottom: 40px;
     text-transform: uppercase;
