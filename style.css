@@ -505,3 +505,15 @@ footer {
     font-size: 0.9rem;
     color: #777;
 }
+
+/* Animação  */
+.reveal {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
